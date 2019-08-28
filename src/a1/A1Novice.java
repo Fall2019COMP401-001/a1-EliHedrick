@@ -10,5 +10,6 @@ public class A1Novice {
 
 		// Your code follows here.
 		
+		
 	}
 }

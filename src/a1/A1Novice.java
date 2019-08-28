@@ -25,7 +25,7 @@ public class A1Novice {
 				double price = scan.nextDouble() * amountBought;
 				sum += price; // adds to sum of customer
 			}
-			System.out.println(firstName.substring(0,1) + " " + lastName + ": "
+			System.out.println(firstName.substring(0,1) + ". " + lastName + ": "
 					+ String.format("%.2f", sum)); // prints out customer name and total spent
 		}
 	}

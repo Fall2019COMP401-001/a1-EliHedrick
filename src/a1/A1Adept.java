@@ -9,7 +9,6 @@ public class A1Adept {
 		Scanner scan = new Scanner(System.in);
 
 		// Your code follows here.
-		
 		int itemsInStore = scan.nextInt();
 		String[] items = new String[itemsInStore]; // holds names of all items
 		double[] prices = new double[itemsInStore]; // holds prices of all items
@@ -39,7 +38,7 @@ public class A1Adept {
 				String itemName = scan.next();
 				int indexOfItem = -1;
 				
-				for(int z = 0; z < items.length && z == indexOfItem; z++) // find index of item in array
+				for(int z = 0; z < items.length; z++) // find index of item in array
 				{
 					if(items[z].equals(itemName))
 						indexOfItem = z;

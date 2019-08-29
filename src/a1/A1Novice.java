@@ -20,7 +20,7 @@ public class A1Novice {
 			
 			for(int y = 0; y < itemsBought; y++) // checks each item
 			{
-				int amountBought = scan.nextInt();
+				int amountBought = scan.nextInt(); // gets amount of each item bought
 				scan.next(); // skips item name, not needed in novice
 				double price = scan.nextDouble() * amountBought;
 				sum += price; // adds to sum of customer

@@ -39,11 +39,10 @@ public class A1Adept {
 				String itemName = scan.next();
 				int indexOfItem = -1;
 				
-				for(int z = 0; z < items.length; z++) // find index of item in array
+				for(int z = 0; z < items.length && z == indexOfItem; z++) // find index of item in array
 				{
 					if(items[z].equals(itemName))
 						indexOfItem = z;
-					break;
 				}
 				sum += amountBought * prices[indexOfItem]; // adds item price to sum
 			}

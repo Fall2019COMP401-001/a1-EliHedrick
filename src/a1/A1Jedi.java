@@ -56,8 +56,8 @@ public class A1Jedi {
 					}
 				}
 			}
-			for(int y = 0; x < items.length; y++)
-				alreadyBought[x] = false;
+			for(int y = 0; y < items.length; y++)
+				alreadyBought[y] = false;
 		}
 		for(int x = 0; x < items.length; x++) // runs through each item, sees amount bought
 			if(customersBought[x] == 0)       // and how many customers bought

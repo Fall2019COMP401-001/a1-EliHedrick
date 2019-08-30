@@ -13,6 +13,7 @@ public class A1Jedi {
 		String[] items = new String[itemsInStore]; // holds names of all items
 		int[] customersBought = new int[itemsInStore]; // holds how many customers bought each item
 		int[] amountBought = new int[itemsInStore]; // holds amount of each item bought
+		boolean[] alreadyBought = new boolean[itemsInStore]; // prevents item counting twice per customer
 		for(int x = 0;x < itemsInStore;x++)
 		{
 			items[x] = scan.next(); // add item name to array
@@ -37,15 +38,19 @@ public class A1Jedi {
 					if(items[z].equals(itemName))
 					{
 						indexOfItem = z;
-						customersBought[indexOfItem]++;
+						if(alreadyBought[indexOfItem] == false)
+							customersBought[indexOfItem]++;
 						amountBought[indexOfItem]+= dupeBought;
+						alreadyBought[indexOfItem] = true;
 						break;
 					}
 				}
 			}
+			for(int y = 0; x < itemsInStore; x++)
+				alreadyBought[x] = false;
 		}
-		for(int x = 0; x < itemsInStore; x++)
-			if(customersBought[x] == 0)
+		for(int x = 0; x < itemsInStore; x++) // runs through each item, sees amount bought
+			if(customersBought[x] == 0)       // and how many customers bought
 			{
 				System.out.println("No customers bought " + items[x]);
 			}

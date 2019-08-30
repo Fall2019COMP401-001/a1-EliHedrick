@@ -6,17 +6,7 @@ public class A1Jedi {
 
 	public static void main(String[] args) {
 		
-		Scanner scan = new Scanner("6\n" + 
-				"Apple 0.25\n" + 
-				"Banana 0.75\n" + 
-				"Milk 3.15\n" + 
-				"Orange 1.25\n" + 
-				"Salami 2.50\n" + 
-				"Sponge 1.15\n" + 
-				"3 \n" + 
-				"Carrie Brownstein 3 2 Banana 1 Orange 2 Milk\n" + 
-				"Corin Tucker 2 3 Banana 2 Sponge\n" + 
-				"Janet Weiss 1 5 Salami");
+		Scanner scan = new Scanner(System.in);
 
 		// Your code follows here.
 		int itemsInStore = scan.nextInt();
